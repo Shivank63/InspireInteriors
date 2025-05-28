@@ -27,7 +27,7 @@ export default function Header() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
       setScrollY(currentScrollY)
-      setIsScrolled(currentScrollY > 0)
+      setIsScrolled(currentScrollY > -10)
 
       // Calculate scroll progress
       const windowHeight = window.innerHeight
@@ -165,7 +165,7 @@ export default function Header() {
                     : "bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-gray-900"
                 }`}
               >
-                <Link href="/book-consultation">Book Consultation</Link>
+                <Link href="/contact">Book Consultation</Link>
               </Button>
             </motion.div>
 
@@ -282,7 +282,7 @@ export default function Header() {
                       <span className="text-sm">hello@inspireinteriors.com</span>
                     </div>
                     <Button asChild className="w-full bg-amber-600 hover:bg-amber-700 text-white rounded-full mt-4">
-                      <Link href="/book-consultation">Book Consultation</Link>
+                      <Link href="/contact">Book Consultation</Link>
                     </Button>
                   </div>
                 </div>
