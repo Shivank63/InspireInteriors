@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, Star } from "lucide-react"
 
@@ -15,10 +16,12 @@ export default function Hero() {
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80"
           alt="Luxury modern interior"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
         <div className="absolute inset-0 gradient-overlay" />
       </motion.div>
@@ -50,7 +53,7 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -59,7 +62,7 @@ export default function Hero() {
           <span className="inline-block px-4 py-2 bg-amber-600/20 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-400/30">
             ✨ Award-Winning Interior Design Studio
           </span>
-        </motion.div> */}
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -90,9 +93,9 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-7 text-lg rounded-full shadow-luxury hover-lift"
+            className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-4 text-lg rounded-full shadow-luxury hover-lift"
           >
-            <Link href="/contact" className="flex items-center">
+            <Link href="/book-consultation" className="flex items-center">
               Start Your Journey
               <ArrowRight className="ml-3 h-5 w-5" />
             </Link>
@@ -102,9 +105,9 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="border-2 border-white/30 text-amber-600 hover:bg-white hover:text-gray-900 px-10 py-7 text-lg rounded-full backdrop-blur-sm hover-lift"
+            className="border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 px-10 py-4 text-lg rounded-full backdrop-blur-sm hover-lift"
           >
-            <Link href="/portfolio" className="flex items-center">
+            <Link href="#featured-projects" className="flex items-center">
               <Play className="mr-3 h-5 w-5" />
               View Our Work
             </Link>
@@ -132,7 +135,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
@@ -149,7 +152,7 @@ export default function Hero() {
             className="w-1 h-3 bg-white/70 rounded-full mt-2"
           />
         </motion.div>
-      </motion.div> */}
+      </motion.div>
     </section>
   )
 }

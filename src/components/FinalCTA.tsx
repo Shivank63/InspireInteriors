@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Button } from "./ui/button"
+import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone } from "lucide-react"
 
 export default function FinalCTA() {
@@ -27,8 +27,8 @@ export default function FinalCTA() {
         >
           <h2 className="font-playfair text-3xl lg:text-5xl font-bold mb-6">Ready to Transform Your Space?</h2>
           <p className="text-gray-300 text-lg lg:text-xl mb-8 max-w-2xl mx-auto">
-            Let's bring your vision to life. Schedule a consultation today and discover how we can create the perfect
-            interior for your lifestyle.
+            Let&apos;s bring your vision to life. Schedule a consultation today and discover how we can create the
+            perfect interior for your lifestyle.
           </p>
 
           <motion.div
@@ -38,7 +38,7 @@ export default function FinalCTA() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
-              <Link href="/contact" className="flex items-center">
+              <Link href="/book-consultation" className="flex items-center">
                 Book Free Consultation
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -47,7 +47,7 @@ export default function FinalCTA() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-amber-600 hover:bg-white hover:text-gray-900 px-8 py-3"
+              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3"
             >
               <Link href="/contact" className="flex items-center">
                 <Phone className="mr-2 h-4 w-4" />

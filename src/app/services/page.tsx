@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Home, Building, Palette, CuboidIcon as Cube, ArrowRight, Check } from "lucide-react"
 
@@ -117,9 +118,11 @@ export default function ServicesPage() {
                 >
                   {/* Image */}
                   <div className={`relative ${isEven ? "" : "lg:col-start-2"}`}>
-                    <img
+                    <Image
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}
+                      width={800}
+                      height={500}
                       className="w-full h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
                     />
                     <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-amber-600 rounded-lg -z-10" />
@@ -136,7 +139,7 @@ export default function ServicesPage() {
                     <p className="text-gray-600 text-lg mb-6">{service.description}</p>
 
                     <div className="mb-6">
-                      <h3 className="font-semibold text-gray-900 mb-3">What's Included:</h3>
+                      <h3 className="font-semibold text-gray-900 mb-3">What&apos;s Included:</h3>
                       <ul className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-start">
@@ -218,7 +221,7 @@ export default function ServicesPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h2 className="font-playfair text-3xl lg:text-4xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and create a space that perfectly reflects your style and needs.
+              Let&apos;s discuss your project and create a space that perfectly reflects your style and needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">

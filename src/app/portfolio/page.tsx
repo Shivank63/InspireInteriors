@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const categories = ["All", "Residential", "Commercial", "Hospitality", "Minimalist", "Modern"]
@@ -144,9 +145,11 @@ export default function PortfolioPage() {
                 >
                   <Link href={project.href}>
                     <div className="aspect-[4/3] overflow-hidden">
-                      <img
+                      <Image
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}
+                        width={800}
+                        height={600}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -177,7 +180,7 @@ export default function PortfolioPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h2 className="font-playfair text-3xl lg:text-4xl font-bold mb-6">Ready to Create Your Dream Space?</h2>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              Let's work together to bring your vision to life with our expert design services.
+              Let&apos;s work together to bring your vision to life with our expert design services.
             </p>
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
               <Link href="/book-consultation">Start Your Project</Link>

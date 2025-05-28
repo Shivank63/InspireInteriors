@@ -30,7 +30,6 @@ const contactInfo = [
   },
 ]
 
-
 export default function ContactPage() {
   return (
     <div className="pt-20">
@@ -45,7 +44,7 @@ export default function ContactPage() {
           >
             <h1 className="font-playfair text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Get In Touch</h1>
             <p className="text-gray-600 text-lg lg:text-xl">
-              Ready to transform your space? We'd love to hear about your project and discuss how we can bring your
+              Ready to transform your space? We&apos;d love to hear about your project and discuss how we can bring your
               vision to life.
             </p>
           </motion.div>
@@ -136,8 +135,8 @@ export default function ContactPage() {
               <div>
                 <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
                 <p className="text-gray-600 mb-8">
-                  We're here to help bring your design dreams to reality. Reach out to us through any of the following
-                  channels.
+                  We&apos;re here to help bring your design dreams to reality. Reach out to us through any of the
+                  following channels.
                 </p>
               </div>
 
