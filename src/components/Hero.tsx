@@ -59,9 +59,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6"
         >
-          <span className="inline-block px-4 py-2 bg-amber-600/20 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-400/30">
+          {/* <span className="inline-block px-4 py-2 bg-amber-600/20 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-400/30">
             ✨ Award-Winning Interior Design Studio
-          </span>
+          </span> */}
         </motion.div>
 
         <motion.h1
@@ -135,7 +135,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
@@ -152,7 +152,7 @@ export default function Hero() {
             className="w-1 h-3 bg-white/70 rounded-full mt-2"
           />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   )
 }
