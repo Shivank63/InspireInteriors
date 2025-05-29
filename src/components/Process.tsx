@@ -36,9 +36,9 @@ export default function Process() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Design Process</h2>
@@ -60,9 +60,9 @@ export default function Process() {
               return (
                 <motion.div
                   key={step.title}
-                  initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                  // initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  // transition={{ duration: 0.8, delay: index * 0.1 }}
                   className={`flex flex-col lg:flex-row items-center gap-8 ${
                     isEven ? "lg:flex-row" : "lg:flex-row-reverse"
                   }`}

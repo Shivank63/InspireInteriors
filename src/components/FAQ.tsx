@@ -41,9 +41,9 @@ export default function FAQ() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -55,9 +55,9 @@ export default function FAQ() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          // transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (

@@ -30,9 +30,9 @@ export default function Hero() {
       {/* Background Image */}
       <motion.div
         className="absolute inset-0 z-0"
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        // initial={{ scale: 1.1 }}
+        // animate={{ scale: 1 }}
+        // transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <Image
           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80"
@@ -47,9 +47,9 @@ export default function Hero() {
       {/* Floating Cards (Hidden on Mobile) */}
       <motion.div
         className="absolute top-10 right-4 glass-effect rounded-xl p-3 text-white hidden md:block"
-        initial={{ opacity: 0, x: 50 }}
+        // initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1.2 }}
+        // transition={{ duration: 1, delay: 1.2 }}
       >
         <div className="flex items-center gap-2">
           <Star className="h-5 w-5 text-amber-400 fill-current" />
@@ -59,9 +59,9 @@ export default function Hero() {
 
       <motion.div
         className="absolute bottom-24 left-4 glass-effect rounded-xl p-3 text-white hidden md:block"
-        initial={{ opacity: 0, x: -50 }}
+        // initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1.4 }}
+        // transition={{ duration: 1, delay: 1.4 }}
       >
         <div className="text-center">
           <div className="text-xl font-bold text-amber-400">12+</div>
@@ -72,18 +72,18 @@ export default function Hero() {
       {/* Main Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, delay: 0.4 }}
           className="font-playfair text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
         >
           Transform Your <span className="block text-gradient">Dream Space</span>
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, delay: 0.6 }}
           className="text-base sm:text-lg lg:text-2xl mb-10 text-gray-200 max-w-3xl mx-auto leading-relaxed"
         >
           Creating extraordinary interiors that blend luxury, functionality, and your unique personality into spaces
@@ -91,9 +91,9 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
         >
           <Button
@@ -122,9 +122,9 @@ export default function Hero() {
 
         {/* Stats */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, delay: 1 }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-14 max-w-xl mx-auto"
         >
           {[

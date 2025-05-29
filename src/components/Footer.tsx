@@ -27,9 +27,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            // initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            // transition={{ duration: 0.6 }}
             className="lg:col-span-1"
           >
             <Link href="/" className="inline-block mb-4">
@@ -56,9 +56,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            // initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            // transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -74,9 +74,9 @@ export default function Footer() {
 
           {/* Services */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            // initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            // transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-gray-300">
@@ -90,9 +90,9 @@ export default function Footer() {
 
           {/* Newsletter */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            // initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            // transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h3 className="font-semibold text-lg mb-4">Stay Updated</h3>
             <p className="text-gray-300 mb-4 text-sm">

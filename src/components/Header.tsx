@@ -12,7 +12,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -52,20 +52,20 @@ export default function Header() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
           isScrolled ? "bg-white/95 backdrop-blur-xl shadow-lg border-b border-gray-100" : "bg-transparent"
         }`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        style={{
-          transform: `translateY(${Math.min(scrollY * 0.1, 10)}px)`,
-        }}
+        // initial={{ y: -100 }}
+        // animate={{ y: 0 }}
+        // transition={{ duration: 0.8, ease: "easeOut" }}
+        // style={{
+          // transform: `translateY(${Math.min(scrollY * 0.1, 10)}px)`,
+        // }}
       >
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              // initial={{ opacity: 0, x: -20 }}
+              // animate={{ opacity: 1, x: 0 }}
+              // transition={{ duration: 0.6, delay: 0.2 }}
             >
               <Link href="/" className="flex items-center group">
                 <div className="relative">
@@ -90,17 +90,17 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              // initial={{ opacity: 0, y: -20 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.6, delay: 0.4 }}
               className="hidden lg:flex items-center space-x-1"
             >
               {navigation.map((item, index) => (
                 <motion.div
                   key={item.name}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+                  // initial={{ opacity: 0, y: -20 }}
+                  // animate={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
                 >
                   <Link
                     href={item.href}
@@ -127,9 +127,9 @@ export default function Header() {
 
             {/* Contact Info & CTA */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              // initial={{ opacity: 0, x: 20 }}
+              // animate={{ opacity: 1, x: 0 }}
+              // transition={{ duration: 0.6, delay: 0.6 }}
               className="hidden lg:flex items-center space-x-4"
             >
               {/* Contact Icons */}
@@ -171,9 +171,9 @@ export default function Header() {
 
             {/* Mobile menu button */}
             <motion.button
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // animate={{ opacity: 1, scale: 1 }}
+              // transition={{ duration: 0.6, delay: 0.7 }}
               className={`lg:hidden p-2 rounded-lg transition-all duration-300 ${
                 isScrolled ? "text-gray-900 hover:bg-gray-100" : "text-white hover:bg-white/10"
               }`}
@@ -206,27 +206,27 @@ export default function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
+            // transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 lg:hidden"
           >
             {/* Backdrop */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 1 }}
+              // exit={{ opacity: 0 }}
               className="absolute inset-0 bg-black/50 backdrop-blur-sm"
               onClick={() => setIsMobileMenuOpen(false)}
             />
 
             {/* Menu Panel */}
             <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              // initial={{ x: "100%" }}
+              // animate={{ x: 0 }}
+              // exit={{ x: "100%" }}
+              // transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="absolute right-0 top-0 h-full w-80 bg-white shadow-2xl"
             >
               <div className="flex flex-col h-full">
@@ -250,9 +250,9 @@ export default function Header() {
                     {navigation.map((item, index) => (
                       <motion.div
                         key={item.name}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        // initial={{ opacity: 0, x: 20 }}
+                        // animate={{ opacity: 1, x: 0 }}
+                        // transition={{ duration: 0.3, delay: index * 0.1 }}
                       >
                         <Link
                           href={item.href}

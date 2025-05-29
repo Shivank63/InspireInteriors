@@ -30,9 +30,9 @@ export default function Process() {
     <section className="py-16 lg:py-24 bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold mb-4">Our Impact in Numbers</h2>
@@ -47,9 +47,9 @@ export default function Process() {
             return (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
+                // initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                // transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
                 <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">

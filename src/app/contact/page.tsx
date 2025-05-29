@@ -37,9 +37,9 @@ export default function ContactPage() {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            // initial={{ opacity: 0, y: 30 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="font-playfair text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Get In Touch</h1>
@@ -57,9 +57,9 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              // initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              // transition={{ duration: 0.8 }}
             >
               <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
               <form className="space-y-6">
@@ -127,9 +127,9 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              // initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              // transition={{ duration: 0.8 }}
               className="space-y-8"
             >
               <div>

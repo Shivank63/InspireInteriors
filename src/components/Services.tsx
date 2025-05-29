@@ -61,9 +61,9 @@ export default function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
           {/* <span className="inline-block px-6 py-3 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold mb-6">
@@ -86,9 +86,9 @@ export default function Services() {
             return (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, y: 50 }}
+                // initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                // transition={{ duration: 0.8, delay: index * 0.2 }}
                 className="group relative bg-white rounded-3xl shadow-soft hover:shadow-luxury transition-all duration-500 overflow-hidden hover-lift"
               >
                 {/* Image Section */}
@@ -157,9 +157,9 @@ export default function Services() {
 
         {/* Bottom CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          // transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-16"
         >
           <div className="bg-white rounded-3xl p-8 shadow-soft max-w-2xl mx-auto">

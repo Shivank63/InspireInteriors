@@ -41,9 +41,9 @@ export default function WhyChooseUs() {
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -61,9 +61,9 @@ export default function WhyChooseUs() {
             return (
               <motion.div
                 key={feature.title}
-                initial={{ opacity: 0, y: 30 }}
+                // initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                // transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">

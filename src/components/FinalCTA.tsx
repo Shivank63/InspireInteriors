@@ -20,9 +20,9 @@ export default function FinalCTA() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="font-playfair text-3xl lg:text-5xl font-bold mb-6">Ready to Transform Your Space?</h2>
@@ -32,9 +32,9 @@ export default function FinalCTA() {
           </p>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            // initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            // transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
@@ -57,9 +57,9 @@ export default function FinalCTA() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0 }}
+            // initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            // transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-8 text-gray-400 text-sm"
           >
             <p>Free consultation • No obligation • Professional advice</p>

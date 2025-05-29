@@ -11,10 +11,10 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative"
+            // initial={{ opacity: 0, x: -50 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 10 }}
+            // className="relative"
           >
             <img
               src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -25,7 +25,7 @@ export default function About() {
           </motion.div>
 
           {/* Content */}
-          <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
+          <motion.div >
             <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-gray-900 mb-6">About Inspire Interiors</h2>
             <p className="text-gray-600 text-lg mb-6">
               With over a decade of experience in transforming spaces, we believe that great design should be both

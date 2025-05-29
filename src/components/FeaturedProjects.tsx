@@ -39,9 +39,9 @@ export default function FeaturedProjects() {
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          // transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
@@ -54,9 +54,9 @@ export default function FeaturedProjects() {
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
+              // initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              // transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Link href={project.href}>
@@ -82,9 +82,9 @@ export default function FeaturedProjects() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          // initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          // transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-12"
         >
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 text-white">
