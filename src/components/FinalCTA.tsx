@@ -38,7 +38,7 @@ export default function FinalCTA() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
-              <Link href="/book-consultation" className="flex items-center">
+              <Link href="/contact" className="flex items-center">
                 Book Free Consultation
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -47,7 +47,7 @@ export default function FinalCTA() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3"
+              className="border-white text-amber-600 hover:bg-white hover:text-gray-900 px-8 py-3"
             >
               <Link href="/contact" className="flex items-center">
                 <Phone className="mr-2 h-4 w-4" />
