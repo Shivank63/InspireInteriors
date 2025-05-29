@@ -51,10 +51,10 @@ export default function Hero() {
         animate={{ opacity: 1, x: 0 }}
         // transition={{ duration: 1, delay: 1.2 }}
       >
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <Star className="h-5 w-5 text-amber-400 fill-current" />
           <span className="text-sm">500+ Happy Clients</span>
-        </div>
+        </div> */}
       </motion.div>
 
       <motion.div
@@ -66,6 +66,10 @@ export default function Hero() {
         <div className="text-center">
           <div className="text-xl font-bold text-amber-400">12+</div>
           <div className="text-sm">Years Experience</div>
+        </div>
+         <div className="flex items-center gap-2 pt-4">
+          <Star className="h-5 w-5 text-amber-400 fill-current" />
+          <span className="text-sm">500+ Happy Clients</span>
         </div>
       </motion.div>
 
